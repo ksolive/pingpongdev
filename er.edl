@@ -1,0 +1,23 @@
+// Copyright (c) Open Enclave SDK contributors.
+// Licensed under the MIT License.
+
+enclave {
+    from "openenclave/edl/syscall.edl" import *;
+    from "platform.edl" import *;
+
+    trusted {
+        public void enclave_helloworld();
+        public void er_testin([in, size = buffer_size] uint8_t* buffer, size_t buffer_size);
+        public void er_readBatch([in, out, size = dataBatchSize] uint8_t *dataBatch, size_t dataBatchSize);
+        public size_t er_writeBatch([in, size = dataBatchSize]uint8_t *dataBatch, size_t dataBatchSize);
+        public void er_exchangeOht(size_t indexFrom, size_t indexTo, [in, size = bigOhtHeadSize]uint8_t *bigOhtHead, size_t bigOhtHeadSize);
+    };
+
+    untrusted {
+        void host_helloworld();
+        void host_testOcall([in, size = bufferSize] uint8_t* buffer, size_t bufferSize);
+        void host_swapIn(int bigOhtIndex, [in, size = DataBufferSize] uint8_t* inDataBuffer, size_t DataBufferSize);
+    };
+};
+
+

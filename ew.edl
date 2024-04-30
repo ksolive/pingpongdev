@@ -1,0 +1,18 @@
+// Copyright (c) Open Enclave SDK contributors.
+// Licensed under the MIT License.
+
+enclave {
+    from "openenclave/edl/syscall.edl" import *;
+    from "platform.edl" import *;
+
+    trusted {
+        public void enclave_helloworld();
+        public void ew_merageEnclave(const  uint_8 *dataCache, size_t dataCacheSize, size_t *indexFrom, size_t *indexTo, uint8_t *bigOhtData, size_t bigOhtDataeSize);
+    };
+
+    untrusted {
+        void host_helloworld();
+    };
+};
+
+

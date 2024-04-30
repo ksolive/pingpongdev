@@ -1,0 +1,11 @@
+/home/azureuser/test/helloworld/build/CMakeFiles/rebuild_cache.dir
+/home/azureuser/test/helloworld/build/CMakeFiles/edit_cache.dir
+/home/azureuser/test/helloworld/build/CMakeFiles/simulate.dir
+/home/azureuser/test/helloworld/build/CMakeFiles/run.dir
+/home/azureuser/test/helloworld/build/CMakeFiles/sign.dir
+/home/azureuser/test/helloworld/build/er/CMakeFiles/rebuild_cache.dir
+/home/azureuser/test/helloworld/build/er/CMakeFiles/edit_cache.dir
+/home/azureuser/test/helloworld/build/er/CMakeFiles/enclave.dir
+/home/azureuser/test/helloworld/build/host/CMakeFiles/rebuild_cache.dir
+/home/azureuser/test/helloworld/build/host/CMakeFiles/edit_cache.dir
+/home/azureuser/test/helloworld/build/host/CMakeFiles/er_host.dir
